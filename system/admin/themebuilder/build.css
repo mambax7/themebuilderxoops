@@ -7,20 +7,20 @@
 	line-height: 0;
 	height: 0;
 }
- 
+
 .clearfix {
 	display: inline-block;
 }
- 
+
 html[xmlns] .clearfix {
 	display: block;
 }
- 
+
 * html .clearfix {
 	height: 1%;
 }
-	
-	
+
+
 /* ------------------------- #olivee-builder -------------------------- */
 #olivee-builder { /*min-width:470px; */position: relative; padding-bottom:15px; border-bottom: 1px solid #E5E5E5;}
 #olivee-builder .clear { clear:both;}
@@ -45,7 +45,10 @@ html[xmlns] .clearfix {
 
 .olivee-item { float:left; }
 
-.olivee-item .olivee-item-content { cursor:move; background: #fff; border-style:solid; border-width:1px; border-color: #c6c8ca #b4b7ba #b4b7ba #b4b7ba; height:35px; margin:3px; position:relative;
+.olivee-item .olivee-item-content { cursor:move; background: #fff;
+    border: 1px solid #b4b7ba;
+    border-top-color: #c6c8ca;
+    height:35px; margin:3px; position:relative;
 
 	background: #F8FA96;
 		background: -moz-linear-gradient(top,  #F8FA96 10%, #0CEDFD 100%);
@@ -55,14 +58,14 @@ html[xmlns] .clearfix {
 		background: -ms-linear-gradient(top,  #F8FA96 10%,#0CEDFD 100%);
 		background: linear-gradient(to bottom,  #F8FA96 10%,#0CEDFD 100%);
 		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#F8FA96', endColorstr='#0CEDFD',GradientType=0 );
-	
+
 	-webkit-border-radius:5px;
 	-moz-border-radius:5px;
-	border-radius:5px;	
-	
-	-webkit-box-shadow: inset 0px 3px 3px 0px #eaeaea;
-	-moz-box-shadow: inset 0px 3px 3px 0px #eaeaea;
-     box-shadow: inset 0px 3px 3px 0px #eaeaea;
+	border-radius:5px;
+
+	-webkit-box-shadow: inset 0 3px 3px 0 #eaeaea;
+	-moz-box-shadow: inset 0 3px 3px 0 #eaeaea;
+     box-shadow: inset 0 3px 3px 0 #eaeaea;
 }
 .olivee-item .olivee-item-size { border-right: 1px solid #ececec; float:left; width:38px; }
 .olivee-item .olivee-item-size .olivee-item-btn { float:left; cursor:pointer; display:block; width:18px; height:18px; line-height:16px; font-size:14px; font-weight:bold; text-shadow:1px 1px 1px #666; text-align:center; border-style:solid; border-width:1px; border-color:#6f94b6 #9ab4cb #9ab4cb #6f94b6; color:#fff; text-decoration:none; margin:-1px 0 0 -1px;
@@ -77,9 +80,9 @@ html[xmlns] .clearfix {
 }
 .olivee-item .olivee-item-size .olivee-item-btn:hover { background: #88a4be;}
 .olivee-item .olivee-item-size .olivee-item-size-dec {
-	-webkit-border-radius: 5px 0px 0px 0px;
-	-moz-border-radius: 5px 0px 0px 0px;
-	border-radius: 5px 0px 0px 0px; 
+	-webkit-border-radius: 5px 0 0 0;
+	-moz-border-radius: 5px 0 0 0;
+	border-radius: 5px 0 0 0;
 }
 .olivee-item .olivee-item-desc { float:left; display:block; text-align:center; width:37px; line-height:16px; border-right: 1px solid #C8C8C8; font-size:11px; color:#666; text-shadow:1px 1px 1px #FFF;}
 .olivee-item .olivee-item-label { padding-left:10px; /*line-height:35px; */color:#3c4048; text-shadow:1px 1px 1px #FFF;}
@@ -89,14 +92,14 @@ html[xmlns] .clearfix {
 .olivee-item .olivee-item-tool .olivee-item-btn { float:left; display:block; width:20px; height:18px; text-indent:-9999px;}
 .olivee-item .olivee-item-tool .olivee-item-btn:hover { background-position: 0 -18px;}
 .olivee-item .olivee-item-tool .olivee-item-delete { background:url(images/btn-delete.png) no-repeat top center; border-bottom:1px solid #848481; margin-top:-1px;
-	-webkit-border-radius: 0px 5px 0px 0px;
-	-moz-border-radius: 0px 5px 0px 0px;
-	border-radius: 0px 5px 0px 0px;
+	-webkit-border-radius: 0 5px 0 0;
+	-moz-border-radius: 0 5px 0 0;
+	border-radius: 0 5px 0 0;
 }
 .olivee-item .olivee-item-tool .olivee-item-edit { background:url(images/btn-edit.png) no-repeat top center;
-	-webkit-border-radius: 0px 0px 5px 0px;
-	-moz-border-radius: 0px 0px 5px 0px;
-	border-radius: 0px 0px 5px 0px;
+	-webkit-border-radius: 0 0 5px 0;
+	-moz-border-radius: 0 0 5px 0;
+	border-radius: 0 0 5px 0;
 }
 
 .olivee-item .olivee-item-meta { display:none;}
@@ -104,12 +107,12 @@ html[xmlns] .clearfix {
 #olivee-desk { display:block; background:#fff; border: 1px solid #DFDFDF; padding:10px; position:relative;
 	-webkit-border-radius:5px;
 	-moz-border-radius:5px;
-	border-radius:5px;	
+	border-radius:5px;
 }
 #olivee-desk .placeholder { margin: 2px; height: 37px; float: left; background-color: #d9e1e9;}
 
-a.btn-blue { padding:8px 15px; color:#efefef; text-shadow:1px 1px 1px rgba(41,64,86,0.5); border:1px solid #577591; text-decoration:none; 
-	
+a.btn-blue { padding:8px 15px; color:#efefef; text-shadow:1px 1px 1px rgba(41,64,86,0.5); border:1px solid #577591; text-decoration:none;
+
 	background: #88a4be;
 		background: -moz-linear-gradient(top,  #88a4be 0%, #4e6a84 100%);
 		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#88a4be), color-stop(100%,#4e6a84));
@@ -118,10 +121,10 @@ a.btn-blue { padding:8px 15px; color:#efefef; text-shadow:1px 1px 1px rgba(41,64
 		background: -ms-linear-gradient(top,  #88a4be 0%,#4e6a84 100%);
 		background: linear-gradient(to bottom,  #88a4be 0%,#4e6a84 100%);
 		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#88a4be', endColorstr='#4e6a84',GradientType=0 );
-		
+
 	-webkit-border-radius:5px;
 	-moz-border-radius:5px;
-	border-radius:5px;	
+	border-radius:5px;
 }
 
 
@@ -134,7 +137,7 @@ a.btn-blue { padding:8px 15px; color:#efefef; text-shadow:1px 1px 1px rgba(41,64
 	-moz-box-shadow: 0 0 5px 5px #E0E0E0;
     box-shadow: 0 0 5px 5px #E0E0E0;
 */
-		
+
 	-webkit-border-radius:5px;
 	-moz-border-radius:5px;
 	border-radius:5px;
@@ -147,7 +150,7 @@ a.btn-blue { padding:8px 15px; color:#efefef; text-shadow:1px 1px 1px rgba(41,64
 	right: 10px;
 	bottom: 10px;
 }
-#olivee-popup a.olivee-popup-close { 
+#olivee-popup a.olivee-popup-close {
 	position: absolute;
 	right: 10px;
 	top: 10px;
@@ -175,11 +178,11 @@ a.btn-blue { padding:8px 15px; color:#efefef; text-shadow:1px 1px 1px rgba(41,64
 	top:50%;
 	margin:-130px 0 0 -230px;
 	border: 1px solid rgba(33, 33, 33, 0.6);
-	
+
 	-moz-box-shadow: 0 0 2px rgba(255, 255, 255, 0.6) inset;
 	-webkit-box-shadow: 0 0 2px rgba(255, 255, 255, 0.6) inset;
 	box-shadow: 0 0 2px rgba(255, 255, 255, 0.6) inset;
-	
+
 	-moz-border-radius: 5px;
 	-webkit-border-radius: 5px;
 	border-radius: 5px;
@@ -236,9 +239,9 @@ a.btn-blue { padding:8px 15px; color:#efefef; text-shadow:1px 1px 1px rgba(41,64
 	color:white;
 	position:relative;
 	height: 33px;
-	
+
 	font:17px/33px 'Cuprum','Lucida Sans Unicode', 'Lucida Grande', sans-serif;
-	
+
 	margin-right: 15px;
 	padding: 0 35px 0 40px;
 	text-decoration:none;
@@ -292,7 +295,7 @@ a.olivee-btn-close { display: block; width: 32px; height:32px; overflow: hidden;
 		background: -ms-linear-gradient(top, #7b7b77 0%,#575755 100%); /* IE10+ */
 		background: linear-gradient(to bottom, #7b7b77 0%,#575755 100%); /* W3C */
 		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7b7b77', endColorstr='#575755',GradientType=0 ); /* IE6-8 */
-	
+
 	-moz-border-radius: 5px;
 	-webkit-border-radius: 5px;
 	border-radius: 5px;
@@ -308,7 +311,7 @@ a.olivee-popup-save, #confirmButtons a.blue { display: block; cursor:pointer; fo
 		background: -ms-linear-gradient(top,  #dcfa9d 0%,#97bb5d 100%); /* IE10+ */
 		background: linear-gradient(to bottom,  #dcfa9d 0%,#97bb5d 100%); /* W3C */
 		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dcfa9d', endColorstr='#97bb5d',GradientType=0 ); /* IE6-8 */
-	
+
 	-moz-border-radius: 5px;
 	-webkit-border-radius: 5px;
 	border-radius: 5px;
@@ -344,11 +347,11 @@ a:hover.olivee-popup-cancel, #confirmButtons a:hover.gray { border: 1px solid; b
 .form-table .olivee-add-tab { float:left; margin-bottom:5px;}
 .form-table .tabs-ul { margin:0;}
 .form-table .tabs-ul li { float:left; padding:10px; margin:10px 10px 0 0; width:200px; border:1px solid #DFDFDF; background:#F9F9F9; position:relative;
-	
+
 	-moz-border-radius: 5px;
 	-webkit-border-radius: 5px;
-	border-radius: 5px; 
-	
+	border-radius: 5px;
+
 }
 .tabs-ul li.tabs-default { display:none;}
 .tabs-ul li .olivee-remove-tab { position:absolute; top:10px; right:10px; height:16px; width:16px;}

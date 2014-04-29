@@ -21,7 +21,7 @@ jQuery(document).ready(function() {
 		oFarb.setColor($input.val());
 
 	});
-	
+
 	$colorpicker_inputs.each(function(e) {
 		jQuery(this).next('.farb-popup').hide();
 	});
@@ -31,7 +31,7 @@ jQuery(document).ready(function() {
 		jQuery(this).parents('li').css( {
 			position : 'relative',
 			zIndex : '9999'
-		})
+		});
 		jQuery('#tabber').css( {
 			overflow : 'visible'
 		});
@@ -43,16 +43,16 @@ jQuery(document).ready(function() {
 			zIndex : '0'
 		})
 	});
-	
+
 	// additional preview field
 	jQuery('input.popup-colorpicker').change(function(){
-		var id = jQuery(this).attr('id')
+		var id = jQuery(this).attr('id');
 		jQuery(this).siblings('.prev-'+id).css('background-color',jQuery(this).val());
-	});	
-	
+	});
+
 	jQuery('.color-prev').click(function(){
-		var id = jQuery(this).attr('rel')
+		var id = jQuery(this).attr('rel');
 		jQuery(this).siblings('#'+id).focus();
 	});
-	
+
 });
