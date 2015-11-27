@@ -1,0 +1,14 @@
+
+1.1 Beta 1                  NOT RELEASED
+---------------------------------------
+- adjustment of language variables names (mamba)
+- some PSR changes (mamba)
+- replace some links to "localhost/arabesk125/" with generic links (mamba)
+- added changelog.txt and other docs (mamba)
+- replaced some hard-coded English words with language variables (mamba)
+- replaced "dirname(__FILE__)" with "__DIR__" (mamba)
+
+
+1.0 Beta 1                  2014-03-21
+---------------------------------------
+- first release  (Olivee)

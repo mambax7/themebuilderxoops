@@ -10,7 +10,7 @@ function no_accent($str_accent)
     return $str_noacc;
 }
 
-$uploaddir = '../../../../uploads/';
+$uploaddir = '../../../uploads/';
 $file      = $uploaddir . basename($_FILES['uploadfile']['name']);
 
 $file = no_accent($file);

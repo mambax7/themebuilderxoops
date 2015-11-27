@@ -27,7 +27,7 @@ class OLIVEE_Options_tabs
         $name  = (!$meta) ? ($this->args['opt_name'] . '[' . $this->field['id'] . ']') : $this->field['id'];
 
         $count = ($this->value) ? count($this->value) : 0;
-        echo "<script type='text/javascript' src='admin/themebuilder/fields/tabs/field_tabs.js' ></script>";
+        echo "<script type='text/javascript' src='fields/tabs/field_tabs.js' ></script>";
         echo '<a href="javascript:void(0);" class="btn-blue mfn-add-tab" rel-name="' . $name . '">Add tab</a>';
         echo '<input type="hidden" name="' . $name . '[count][]" class="mfn-tabs-count" value="' . $count . '" />';
         echo '<br style="clear:both;" />';

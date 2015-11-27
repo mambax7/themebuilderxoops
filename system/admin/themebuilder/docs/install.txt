@@ -1,0 +1,12 @@
+INSTALL/UNISTALL
+=================
+
+1) Copy the files from "/system" folder to XOOPS installation to "/modules/system" folder
+
+2) Add in the /modules/system/constants.php file :
+
+    define("XOOPS_SYSTEM_THEME", 18);
+
+   right after this line:
+
+    define("XOOPS_SYSTEM_MAINTENANCE", 17);

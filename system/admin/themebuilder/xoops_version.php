@@ -1,7 +1,7 @@
 <?php
 
 $modversion['name']        = _AM_SYSTEM_THEME;
-$modversion['version']     = '1.0';
+$modversion['version']     = '1.1';
 $modversion['description'] = _AM_SYSTEM_THEME_DESC;
 $modversion['author']      = 'Wajdi Ben Aicha';
 $modversion['credits']     = 'The XOOPS Project; Olivee';
